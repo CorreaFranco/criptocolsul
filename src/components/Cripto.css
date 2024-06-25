@@ -1,0 +1,26 @@
+.cripto {
+    border: 1px solid #aaf;
+    border-left: 10px solid #aaf;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.info {
+    color: #aaf;
+}
+
+.label {
+    color: #aaf;
+}
+
+.label-two {
+    color: #fff;
+}
+
+.positivo {
+    color: #0f0;
+}
+
+.negativo {
+    color: #f00;
+}

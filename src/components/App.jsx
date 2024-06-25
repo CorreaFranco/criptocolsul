@@ -1,6 +1,8 @@
 import axios from "axios"
 import { useState } from "react"
 import { useEffect } from "react"
+import Cripto from "./Critpo"
+import "./App.css"
 
 function App() {
 
@@ -12,6 +14,7 @@ function App() {
     axios.get(`${API_URL}assets`)
       .then((data) => {
         setCriptos(data.data.data)
+        console.log(data.data.data)
       })
       .catch(() =>{
         console.log("La peticion fallo")
@@ -21,16 +24,16 @@ function App() {
   if (!criptos) return <span>Cargando...</span>
 
   return (
-    <>
+    <div className="app-container">
       <h1>Critoconsul</h1>
-      <ol>
-        {
-          criptos.map(({ id ,name, priceUSD}) => (
-            <li key={id}>Nombre: {name}  Precio:{priceUSD}</li>
-          ))
-        }
-      </ol>
-    </>
+      <div className="cripto-container">
+      {
+        criptos.map(({ id ,name , priceUsd, changePercent24Hr }) => (
+          <Cripto key={id} name={name}  priceUSD={priceUsd} changePercent24Hr={changePercent24Hr} />
+        ))
+      }
+      </div>
+    </div>
   )
 }
 export default App
