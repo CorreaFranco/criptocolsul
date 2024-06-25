@@ -1,0 +1,18 @@
+
+.main-menu {
+    width: 100vw;
+    line-height: 6rem;
+}
+
+.bar-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link {
+    color: #fff;
+    
+    font-size: 1.5rem;
+    list-style: none;
+    text-decoration: none;
+}

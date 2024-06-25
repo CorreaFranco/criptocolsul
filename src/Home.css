@@ -1,0 +1,26 @@
+
+.main-container {
+    max-width: 1400px;
+    height: calc(100vh - 6rem);
+    margin: auto;
+}
+
+.title {
+    width: 100%;
+
+    text-align: center;
+    line-height: 20vh;
+    font-size: 8rem;
+}
+
+.link-container {
+    width: 100%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.link-criptomonedas {
+    color: #fff;
+    text-decoration: none;
+    font-size: 3rem;
+}
