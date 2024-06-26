@@ -6,13 +6,14 @@
 
 .bar-nav {
     display: flex;
-    justify-content: space-around;
 }
 
 .link {
+    padding: 0 1rem;
+
     color: #fff;
     
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     list-style: none;
     text-decoration: none;
 }

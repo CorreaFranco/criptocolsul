@@ -1,0 +1,58 @@
+.criptoPage-container {
+    max-width: 1400px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    position: relative;
+}
+
+.criptoPage-container .info {
+    position: fixed;
+}
+
+.info-cripto .rank{
+    font-size: 1.5rem;
+}
+.info-cripto .title {
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.info-cripto .symbol {
+    font-size: 2rem;
+}
+
+.info-detail {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+.criptoPage-container .history {
+    grid-column-start: 2;
+}
+
+.history-table-container {
+    width: 100%;
+    padding: 1rem;
+
+    border-radius: 5px;
+    background-color: #333;
+}
+
+th {
+    text-align: start;
+    padding-bottom: 1rem;
+}
+
+td {
+    padding: 0.5rem 0;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #99f;
+}
