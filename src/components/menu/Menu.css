@@ -1,0 +1,19 @@
+
+.main-menu {
+    width: 100vw;
+    line-height: 6rem;
+}
+
+.bar-nav {
+    display: flex;
+}
+
+.link {
+    padding: 0 1rem;
+
+    color: #fff;
+    
+    font-size: 1.2rem;
+    list-style: none;
+    text-decoration: none;
+}
